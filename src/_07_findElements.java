@@ -21,7 +21,7 @@ public class _07_findElements {
             System.out.println(item.isEnabled());
 
         }
-        driver.quit();
+   Driver.quitDriver();
 
     
 
