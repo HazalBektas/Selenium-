@@ -32,30 +32,25 @@ public class TestFacebook {
             else System.out.println("Heading 2 is displayed validation FAILED");
 
             WebElement email = driver.findElement(By.id("email"));
-            Waiter.pause(2);
             if (email.isDisplayed()) System.out.println("Email input box existing validation PASSED");
             else System.out.println("Email input box validation FAILED");
 
             WebElement password = driver.findElement(By.id("passContainer"));
-            Waiter.pause(2);
             if (password.isDisplayed()) System.out.println("Password input box validation PASSED");
             else System.out.println("Password input box validation FAILED");
 
 
             WebElement login = driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[1]/div/div/div/div[2]/div/div[1]/form/div[2]/button"));
-            Waiter.pause(2);
             if (login.isEnabled()) System.out.println("Log In button is enabled validation PASSED");
             else System.out.println("Log In button is enabled validation FAILED");
 
 
             WebElement forgotPassword = driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[1]/div/div/div/div[2]/div/div[1]/form/div[3]/a"));
-            Waiter.pause(2);
             if (forgotPassword.isDisplayed()) System.out.println("Forgot password validation PASSED");
             else System.out.println("Forgot password validation FAILED");
 
 
             WebElement createANewAccount = driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[1]/div/div/div/div[2]/div/div[1]/form/div[3]/a"));
-            Waiter.pause(2);
             if (createANewAccount.isDisplayed()) System.out.println("Create a new account button validation PASSED");
             else System.out.println("Create a new account button validation FAILED");
 
